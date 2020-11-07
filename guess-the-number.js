@@ -8,7 +8,7 @@ function startGame(){
 function onGuess(){
     let guess = document.getElementById("numberGuess").value;
     let guessResponse = document.getElementById("guessResponse");
-    recordOnce(guess, guesses, val => !(val >= 0) || !(val <= 100));
+    recordOnce(guess, guesses, v => !(v >= 0) || !(v <= 100));
     respond(guessResponse, valueCheck(guess, 0, 100));
 }
 
@@ -30,7 +30,7 @@ function valueCheck(val, min, max){
     }
 }
 function recordOnce(val, arr, exclusionCheck){
-    if(!exclusionCheck() && !arr.includes(val)){
+    if(!exclusionCheck(val) && !arr.includes(val)){
         arr.push(val);
     }
 } 
