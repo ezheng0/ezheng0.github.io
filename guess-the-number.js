@@ -1,3 +1,5 @@
+let num;
+let guesses = [];
 startGame();
 function startGame(){
     clearPage();
@@ -19,3 +21,8 @@ function valueCheck(val, min, max){
         return "Too high";
     }
 }
+function recordOnce(val, arr, exclusionCheck){
+    if(!exclusionCheck() && !arr.includes(val)){
+        arr.push(val);
+    }
+} 
