@@ -1,5 +1,5 @@
 let num;
-let guesses = [];
+let guesses;
 startGame();
 function startGame(){
     clearPage();
