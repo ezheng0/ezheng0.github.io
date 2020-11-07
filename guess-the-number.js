@@ -3,6 +3,7 @@ let guesses = [];
 startGame();
 function startGame(){
     clearPage();
+    guesses = [];
     num = Math.floor(Math.random() * 101);
 }
 function onGuess(){
