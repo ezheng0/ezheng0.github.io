@@ -14,7 +14,6 @@ function onGuess(){
 
 function clearPage(){
     document.getElementById("guessResponse").innerHTML = "";
-    document.getElementById("replay").style.display = "none";
 }
 
 function valueCheck(val, min, max){
