@@ -32,3 +32,6 @@ function recordOnce(val, arr, exclusionCheck){
         arr.push(val);
     }
 } 
+function respond(element, message){
+    element.innerHTML = message;
+}
