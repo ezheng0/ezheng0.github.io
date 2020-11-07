@@ -1,0 +1,11 @@
+body {
+    font-family: 'Comic Sans MS', sans-serif;
+    
+}
+h1 {
+    font-size: 4rem;
+    color: rebeccapurple;
+    background: -webkit-linear-gradient(left, red, orange, yellow, green,blue, indigo, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
