@@ -14,6 +14,7 @@ function onGuess(){
     let guessResponse = document.getElementById("guessResponse");
     valueCheck(guess, 0, 100);
     recordOnce(guess, guesses, val => !(val >= 0) || !(val <= 100));
+    respond(guessResponse, valueCheck);
 }
 function valueCheck(val, min, max){
     if(!(val >= min) || !(val <= max)){
